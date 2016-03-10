@@ -18,7 +18,17 @@ public class NumberOf1Tesr {
         return count;
     }
 
+    /**
+     * 直接使用库函数:
+     * @param n
+     * @return
+     */
+    public static int Number1(int n) {
+        return Integer.toBinaryString(n).replaceAll("0","").length();
+    }
+
     public static void main(String[] args) {
         System.out.println(NumberOf1(5));
+        System.out.println(Number1(5));
     }
 }

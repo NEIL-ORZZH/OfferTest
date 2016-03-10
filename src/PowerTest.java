@@ -15,7 +15,7 @@ public class PowerTest {
      * @param exponent
      * @return
      */
-    public double power(double base,int exponent){
+    public static double power(double base,int exponent){
         double result = base;
         if(exponent == 0){
             return 1;
@@ -32,4 +32,17 @@ public class PowerTest {
         }
     }
 
+    /**
+     *
+     * 直接使用库函数
+     *
+     */
+    public static double power2(double base,int exponent){
+        return Math.pow(base,exponent);
+    }
+
+    public static void main(String[] args) {
+        System.out.println(power2(1.2,10));
+        System.out.println(power(1.2,10));
+    }
 }
