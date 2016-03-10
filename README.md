@@ -3,45 +3,44 @@
 *题目来源：*[牛客网](http://www.nowcoder.com/ta/coding-interviews?page=1)
 
 ### 题目一：二维数组中的查找
-*描述：*  
+**描述：**  
 在一个二维数组中，每一行都按照从左到右递增的顺序排序，每一列都按照从上到下递增的顺序排序。请完成一个函数，输入这样的一个二维数组和一个整数，判断数组中是否含有该整数。  
 
-*解题思路：*  [代码](https://github.com/ToryangChen/OfferTest/blob/master/src/MatrixSearch.java)
+**解题思路：**  [代码](https://github.com/ToryangChen/OfferTest/blob/master/src/MatrixSearch.java)  
 将target与二维数组array第一行最后一个数做比较,如果target大于该行数,则不考虑第一行,相反不考虑最后一列,相等返回true； 
 
 ### 题目二: 替换空格
-*描述:*  
+**描述:**  
 请实现一个函数，将一个字符串中的空格替换成“%20”。例如，当字符串为We Are Happy.则经过替换之后的字符串为We%20Are%20Happy。
 
-*解题思路:* [代码](https://github.com/ToryangChen/OfferTest/blob/master/src/SpaceReplace.java)
-
+**解题思路:** [代码](https://github.com/ToryangChen/OfferTest/blob/master/src/SpaceReplace.java)  
 解法一: 遍历  
 解法二: 直接使用replaceAll函数
 
 ### 题目三: 从尾到头打印链表
 
-*描述:*  
+**描述:**  
 输入一个链表，从尾到头打印链表每个节点的值。 
 
-*解题思路:* [代码](https://github.com/ToryangChen/OfferTest/blob/master/src/ListNodeTest.java)
+**解题思路:** [代码](https://github.com/ToryangChen/OfferTest/blob/master/src/ListNodeTest.java)  
 解法一: 使用栈的方法解决;  
 解法二: 使用递归的方法,但是实质还是栈:
 
 ### 题目四: 重建二叉树
-*描述*  
+**描述**  
 输入某二叉树的前序遍历和中序遍历的结果，请重建出该二叉树。假设输入的前序遍历和中序遍历的结果中都不含重复的数字。例如输入前序遍历序列{1,2,4,7,3,5,6,8}和中序遍历序列{4,7,2,1,5,3,8,6}，则重建二叉树并返回;
 
-*解题思路:* [代码](https://github.com/ToryangChen/OfferTest/blob/master/src/TreeNodeTest.java)
+**解题思路:** [代码](https://github.com/ToryangChen/OfferTest/blob/master/src/TreeNodeTest.java)
  
  * 取前序遍历第一个数字,该数字是跟节点;
  * 在中序遍历中找到跟节点,则该跟节点左边是左子数,右边为右子数;
  * 以此遍历,进行递归;
 
 ### 题目五: 用栈实现队列 
-*描述*  
+**描述:**  
 用两个栈来实现一个队列，完成队列的Push和Pop操作。 队列中的元素为int类型。
 
-*解题思路:*[代码](https://github.com/ToryangChen/OfferTest/blob/master/src/Stack2Range.java)  
+**解题思路:** [代码](https://github.com/ToryangChen/OfferTest/blob/master/src/Stack2Range.java)  
 
  * 将所有数先存入第一个栈中;
  * 第一个栈出栈,按照出栈顺序存入第二个栈中;
@@ -60,7 +59,7 @@
 大家都知道斐波那契数列，现在要求输入一个整数n，请你输出斐波那契数列的第n项;
 
 *解题思路:*[代码](https://github.com/ToryangChen/OfferTest/blob/master/src/Fibonacci.java)  
- 这里实现的斐波那契数列不使用递归的算法,递归算法重复计算的次数很多,当输入n值很大时会出现stackOverflow报错;
+ 这里实现的斐波那契数列不使用递归的算法,递归算法重复计算的次数很多,当输入n值很大时会出现stackOverflow报错;  
  所以这里采用的是一个简单的动态规划(数组遍历)
  
 ### 题目八: 跳台阶/ 变态跳台阶
